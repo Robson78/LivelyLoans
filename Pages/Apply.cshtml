@@ -1,0 +1,847 @@
+﻿@page
+@model ApplyModel
+@{
+    Layout = "_LayoutSub";
+}
+@{
+    ViewData["Title"] = "Apply Now";
+}
+<div id="loader" class="loader hidden" style="margin:auto;"></div>
+
+<article class="masthead masthead--home masthead--apply" id="apply-head">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>You're just a couple of minutes from matching with a lender!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4 style="width:100%;padding-bottom:30px;">Remember, our loan service has no obligation, and all credit histories welcome</h4>
+            </div>
+
+        </div>
+    </div>
+</article>
+
+<div class="">
+    <!-- content start -->
+    <div class="wrapper-content bg-white">
+        <div class="container">
+            <section class="xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="appform" class=""></div>
+
+                            <div id="app-form" class="panel panel-form">
+
+                                <div class="panel-body">
+                                    <!-- section start -->
+                                    <div class="form-section active" data-section="1" data-step="1">
+
+                                        <div class="-errors"></div>
+                                        <!-- fields -->
+                                        <div class="form-group-section">
+
+                                            <!-- ROW -->
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Loan Amount</label>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">£</span> <input class="form-control" type="number" name="loan-amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Loan Term</label>
+                                                        <select class="form-control">
+                                                            <option value="1">1 month</option>
+                                                            <option value="3">3 months</option>
+                                                            <option value="6">6 months</option>
+                                                            <option value="9">9 months</option>
+                                                            <option value="12">12 months</option>
+                                                            <option value="18">18 months</option>
+                                                            <option value="24">24 months</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Loans In Last Year</label>
+                                                        <select class="form-control">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group form-selection">
+
+                                                        <label>Reason For Loan</label>
+
+                                                        <select class="form-control">
+                                                            <option value="1">Debt Consolidation</option>
+                                                            <option value="2">Holiday</option>
+                                                            <option value="3">Wedding</option>
+                                                            <option value="4">Home Improvements</option>
+                                                            <option value="5">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-section">
+
+                                        <!-- fields -->
+                                        <div class="form-group-section">
+
+                                            <!-- ROW -->
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>Title</label>
+                                                        <select class="form-control">
+                                                            <option value="1" name="Mr">Mr</option>
+                                                            <option value="2" name="Miss">Miss</option>
+                                                            <option value="3" name="Mrs">Mrs</option>
+                                                            <option value="4" name="Mrs">Ms</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Forename</label>
+                                                        <input class="form-control" name="Forename">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label>Surname</label>
+                                                        <input class="form-control" name="Forename">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- ROW -->
+                                            <div class="row dob-sb">
+                                                <div class="col-sm-12">
+                                                    <label>Date Of Birth</label>
+                                                    <div class="row">
+                                                        <div class="col-sm-4  col-xs-6">
+                                                            <div class="form-group">
+                                                                <select class="form-control">
+                                                                    <option value="0">Day</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="31">31</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4  col-xs-6">
+                                                            <div class="form-group">
+                                                                <select class="form-control">
+                                                                    <option value="0">Month</option>
+                                                                    <option value="1">Jan</option>
+                                                                    <option value="2">Feb</option>
+                                                                    <option value="3">Mar</option>
+                                                                    <option value="4">Apr</option>
+                                                                    <option value="5">May</option>
+                                                                    <option value="6">Jun</option>
+                                                                    <option value="7">Jul</option>
+                                                                    <option value="8">Aug</option>
+                                                                    <option value="9">Sep</option>
+                                                                    <option value="10">Oct</option>
+                                                                    <option value="11">Nov</option>
+                                                                    <option value="12">Dec</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-12">
+                                                            <div class="form-group">
+                                                                <select class="form-control">
+                                                                    <option value="0">Year</option>
+                                                                    <option value="1">1956</option>
+                                                                    <option value="2">1957</option>
+                                                                    <option value="3">1958</option>
+                                                                    <option value="4">1959</option>
+                                                                    <option value="5">1960</option>
+                                                                    <option value="6">1961</option>
+                                                                    <option value="7">1962</option>
+                                                                    <option value="8">1963</option>
+                                                                    <option value="9">1964</option>
+                                                                    <option value="10">1965</option>
+                                                                    <option value="11">1966</option>
+                                                                    <option value="12">1967</option>
+                                                                    <option value="13">1968</option>
+                                                                    <option value="14">1969</option>
+                                                                    <option value="15">1970</option>
+                                                                    <option value="16">1971</option>
+                                                                    <option value="17">1972</option>
+                                                                    <option value="18">1973</option>
+                                                                    <option value="19">1974</option>
+                                                                    <option value="20">1975</option>
+                                                                    <option value="21">1976</option>
+                                                                    <option value="22">1977</option>
+                                                                    <option value="23">1978</option>
+                                                                    <option value="24">1979</option>
+                                                                    <option value="25">1980</option>
+                                                                    <option value="26">1981</option>
+                                                                    <option value="27">1982</option>
+                                                                    <option value="28">1983</option>
+                                                                    <option value="29">1984</option>
+                                                                    <option value="30">1985</option>
+                                                                    <option value="31">1986</option>
+                                                                    <option value="32">1987</option>
+                                                                    <option value="33">1988</option>
+                                                                    <option value="34">1989</option>
+                                                                    <option value="35">1990</option>
+                                                                    <option value="36">1991</option>
+                                                                    <option value="37">1992</option>
+                                                                    <option value="38">1993</option>
+                                                                    <option value="39">1994</option>
+                                                                    <option value="40">1995</option>
+                                                                    <option value="41">1996</option>
+                                                                    <option value="42">1997</option>
+                                                                    <option value="43">1998</option>
+                                                                    <option value="44">1999</option>
+                                                                    <option value="45">2000</option>
+                                                                    <option value="46">2001</option>
+                                                                    <option value="47">2002</option>
+                                                                    <option value="48">2003</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <small class="help-block1" style="padding-bottom:20px;padding-left:15px;">You must be over 18</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ROW -->
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Home Phone</label>
+                                                        <input class="form-control" name="Home Phone">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Mobile Phone</label>
+                                                        <input class="form-control" name="Mobile Phone">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input class="form-control" name="Email Address">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-section" data-section="2">
+
+                                        <div class="-errors"></div>
+
+                                        <!-- fields -->
+                                        <div class="form-group-section">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Marital Status</label>
+                                                        <select class="form-control">
+                                                            <option value="1">Single</option>
+                                                            <option value="2">Married</option>
+                                                            <option value="3">Divorced</option>
+                                                            <option value="4">Separated</option>
+                                                            <option value="5">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label>Dependents</label>
+                                                        <select class="form-control">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10+</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-section" data-section="3" data-step="2">
+
+                                        <div class="-errors"></div>
+
+                                        <!-- fields -->
+                                        <div class="form-group-section address-default" id="appformControl__address">
+                                            <!-- ROW -->
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Residential Status</label>
+                                                        <select class="form-control">
+                                                            <option value="1">Homeowner</option>
+                                                            <option value="2">Private Tenant</option>
+                                                            <option value="3">Council Tenant</option>
+                                                            <option value="4">Housing Association</option>
+                                                            <option value="5">Living With Parents</option>
+                                                            <option value="6">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- ADDRESS DETAILS #1 -->
+                                            <div id="appform-address-toggle" data-group="address">
+
+                                                <!-- ROW -->
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <div class="form-group">
+                                                            <label>House Number</label>
+                                                            <input type="number" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-9">
+                                                        <div class="form-group">
+                                                            <label>House Name</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>Street</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>Town</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>County</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label>Postcode</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="form-group" style="margin-bottom:0!important;">
+                                                            <label for="">How long have you lived there?</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                                <option value="20">20</option>
+                                                                <option value="21">21</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30+</option>
+                                                            </select>
+                                                            <small class="help-block1">Years</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                            </select>
+                                                            <small class="help-block1">Months</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section" data-section="2" data-step="3">
+
+                                <div class="-errors"></div>
+
+                                <!-- fields -->
+                                <div class="form-group-section">
+
+                                    <!-- ROW -->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label>Employment Status</label>
+                                                <select class="form-control">
+                                                    <option value="1">Employed Full-Time</option>
+                                                    <option value="2">Employed Part-Time</option>
+                                                    <option value="3">Self-Employed</option>
+                                                    <option value="4">Student</option>
+                                                    <option value="5">Pension</option>
+                                                    <option value="6">Unemployed</option>
+                                                    <option value="7">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="emp-details">
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Employer Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Job Industry</label>
+                                                    <select class="form-control">
+                                                        <option value="1">Construction/ Manufacturing</option>
+                                                        <option value="2">Hotel/ Restaurant/ Leisure</option>
+                                                        <option value="3">Health/ Care</option>
+                                                        <option value="4">Public Administration</option>
+                                                        <option value="5">Other Office</option>
+                                                        <option value="6">Other Non Office</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ROW -->
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Job Title</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <label for="" class="emp-time">How long have you worked here?</label>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                                <option value="20">20</option>
+                                                                <option value="21">21</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30+</option>
+                                                            </select>
+                                                            <small class="help-block1">Years</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option value="0">0</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                            </select>
+                                                            <small class="help-block1">Months</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-section" data-section="2">
+
+                                <div class="-errors"></div>
+
+                                <!-- fields -->
+                                <div class="form-group-section">
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Monthly Income</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Payment Type</label>
+                                                <select class="form-control">
+                                                    <option value="1">Bank Transfer</option>
+                                                    <option value="2">Cheque</option>
+                                                    <option value="3">Cash</option>
+                                                    <option value="4">Other</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="margin-top:40px;">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Payment Frequency</label>
+                                                <select class="form-control">
+                                                    <option value="1">Monthly</option>
+                                                    <option value="2">Weekly</option>
+                                                    <option value="3">Bi-Weekly</option>
+                                                    <option value="4">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+
+                                <div class="-errors"></div>
+
+                                <!-- fields -->
+                                <div class="form-group-section">
+                                    <!-- ROW -->
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Rent/ Mortgage Costs</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Credit Costs</label>
+                                                <div class="input-group">
+
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Gas, Electricity &amp; Water</label>
+                                                <div class="input-group">
+
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Food Costs</label>
+                                                <div class="input-group">
+
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Transport Costs</label>
+                                                <div class="input-group">
+
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label>Other Costs</label>
+                                                <div class="input-group">
+
+                                                    <span class="input-group-addon" id="basic-addon1">£</span><input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-section" data-section="2" data-step="4">
+
+                                <div class="-errors"></div>
+
+                                <!-- fields -->
+                                <div class="form-group-section">
+
+                                    <div class="row">
+
+                                        <div class="col-xs-12 text-center">
+
+                                            <input id="terms" type="checkbox">
+
+                                            <label id="cred-report-label" for="terms" style="display:inline-block !important; font-size:0.8em !important;font-weight: 300;">
+                                                I have read and agree to the <a href="/terms" style="color: #864b82;" target="_blank">terms and conditions</a>
+                                                and <a href="/privacy" target="_blank" style="color: #864b82;">privacy policy</a>. I understand that my details will be passed to a panel of lenders and brokers, and a credit search may be conducted.
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+
+                                        <input id="marketing" type="checkbox">
+
+                                        <label id="marketing-label" for="marketing" style="display:inline-block !important; font-size:0.8em !important;font-weight: 300;">
+                                            I would like to opt in to future marketing from Lively Loan.
+                                        </label><br><br>
+
+                                        <div class="col-xs-12 col-sm-12 pb30">
+                                            To opt out in the future, please visit our <a href="/contact-us.aspx" style="color:#864b82">contact page</a>. Our <a href="/privacy" style="color:#864b82"> Privacy Policy</a> explains what sort of messages you can expect to receive by opting in. We handle your data in accordance with the Data Protection Act 1998, and the General Data Protection Act 2018.
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row" style="padding-top:50px;margin-left:-28px !important;">
+                                <div class="col-xs-12 text-center">
+                                    <a href="#" onclick="displayModal();" id="form-submit" class="btn btn-success btn-lg">Find My Lender</a> <br><br>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="ppModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                    <h4 class="modal-title">How we use your data</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="font-size:12px;">
+                                        We will gain your express opt-in consent before we send you any information about third party products, services and
+                                        offers that might be of interest to you. Marketing messages may relate to auto finance, banking, credit cards, credit references and scores,
+                                        credit repair, insurance, payday loans, personal loans, payment protection insurance, shopping clubs and reward programs, identity protection.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="rModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                    <h2 class="modal-title">
+                                        <i class="fa fa-frown-o fa-3x" aria-hidden="true"></i>
+                                        Sorry, we can't help you at this time
+                                    </h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="font-size:14px;">
+                                        This could be that we've been unable to find a lender to match your details, or a technical problem.
+                                    </p>
+                                    <p style="font-size:14px;">
+                                        Please try again later - we apologise for the inconvenience.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closeModal();">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    var _hideModal = true;
+
+    function displayModal() {
+        var element = document.getElementById("loader");
+        element.classList.remove("hidden");
+
+        setTimeout(function () { $("#rModal").modal(); }, 3000);
+
+    }
+
+    function closeModal() {
+        var element = document.getElementById("loader");
+        element.classList.add("hidden");
+    }
+</script>

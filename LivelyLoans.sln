@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivelyLoans", "LivelyLoans.csproj", "{C66F7465-67C1-43FE-BE28-D481723481B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C66F7465-67C1-43FE-BE28-D481723481B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66F7465-67C1-43FE-BE28-D481723481B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66F7465-67C1-43FE-BE28-D481723481B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66F7465-67C1-43FE-BE28-D481723481B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40965C79-6FE3-4D53-80BB-1D940D331E41}
+	EndGlobalSection
+EndGlobal
